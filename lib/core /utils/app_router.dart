@@ -13,7 +13,7 @@ abstract class AppRouter {
       GoRoute(
         path: '/',
         builder: (context, state) {
-          return const BoardingView();
+          return const HomeView();
         },
       ),
       GoRoute(
