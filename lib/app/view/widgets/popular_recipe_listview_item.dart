@@ -28,7 +28,7 @@ class PopularRecipeListViewItem extends StatelessWidget {
             alignment: Alignment.topRight,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
-              child: FavoriteIcon(),
+              child: FavoriteIcon(index: index),
             ),
           ),
           Container(
@@ -92,4 +92,3 @@ class PopularRecipeListViewItem extends StatelessWidget {
     );
   }
 }
-

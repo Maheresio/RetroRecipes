@@ -49,7 +49,7 @@ class StyledSliverAppBar extends StatelessWidget {
       ),
 
       actions: [
-        FavoriteIcon(radius: 20),
+        FavoriteIcon(radius: 20, index: index),
         CircleAvatar(
           backgroundColor: Colors.black38,
           child: IconButton(
