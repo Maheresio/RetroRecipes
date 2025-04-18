@@ -25,7 +25,15 @@ class MyApp extends StatelessWidget {
           return MaterialApp.router(
             routerConfig: AppRouter.router,
             debugShowCheckedModeBanner: false,
-            theme: ThemeData().copyWith(textTheme: GoogleFonts.latoTextTheme()),
+            theme: ThemeData(
+              textButtonTheme: TextButtonThemeData(
+                style: TextButton.styleFrom(
+                  foregroundColor: Colors.green,
+                  backgroundColor: Colors.transparent,
+                  padding: EdgeInsets.zero,
+                ),
+              ),
+            ).copyWith(textTheme: GoogleFonts.latoTextTheme()),
           );
         },
       ),
