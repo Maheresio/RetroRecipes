@@ -8,12 +8,13 @@ import '../helpers/custom_transition.dart';
 abstract class AppRouter {
   static const kHomeView = '/homeView';
   static const kRecipeDetailsView = '/recipeDetailsView';
+
   static final GoRouter router = GoRouter(
     routes: [
       GoRoute(
         path: '/',
         builder: (context, state) {
-          return const HomeView();
+          return BoardingView();
         },
       ),
       GoRoute(
@@ -30,13 +31,14 @@ abstract class AppRouter {
       GoRoute(
         path: kRecipeDetailsView,
         builder: (context, state) {
-          return const RecipeDetails();
+          return RecipeDetails(index: state.extra as int);
         },
-        pageBuilder:
-            (context, state) => buildPageWithDefaultTransition<void>(
-              state: state,
-              child: const RecipeDetails(),
-            ),
+        pageBuilder: (context, state) {
+          return buildPageWithDefaultTransition<void>(
+            state: state,
+            child: RecipeDetails(index: state.extra as int),
+          );
+        },
       ),
     ],
   );
