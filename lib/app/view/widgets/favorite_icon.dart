@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
 
 class FavoriteIcon extends StatefulWidget {
-  const FavoriteIcon({super.key});
+  const FavoriteIcon({super.key, this.radius = 15});
 
+  final double radius;
   @override
   State<FavoriteIcon> createState() => _FavoriteIconState();
 }
@@ -19,7 +20,7 @@ class _FavoriteIconState extends State<FavoriteIcon> {
         });
       },
       child: CircleAvatar(
-        radius: 15,
+        radius: widget.radius,
         backgroundColor: isFavorite ? Colors.red : Colors.black45,
         child: Icon(IconsaxPlusLinear.heart, color: Colors.white),
       ),
