@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:retro_recipes/core%20/utils/app_router.dart';
 
 import '../../model/recipe_model.dart';
 import 'popular_recipe_listview_item.dart';
@@ -15,7 +17,12 @@ class PopularRecipeListView extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         children: List.generate(
           recipeItems.length,
-          (index) => PopularRecipeListViewItem(index: index),
+          (index) => GestureDetector(
+            onTap: () {
+              GoRouter.of(context).push(AppRouter.kRecipeDetailsView,extra: index);
+            },
+            child: PopularRecipeListViewItem(index: index),
+          ),
         ),
       ),
     );
