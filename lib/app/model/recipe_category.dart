@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:retro_recipes/core%20/utils/app_images.dart';
+
+import '../../core%20/utils/app_images.dart';
 
 class Category {
   final String name;

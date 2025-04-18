@@ -1,4 +1,4 @@
-import 'package:retro_recipes/core%20/utils/app_images.dart';
+import '../../core%20/utils/app_images.dart';
 
 List<String> menuItems = [
   'Breakfast',

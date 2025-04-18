@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:retro_recipes/core%20/utils/app_strings.dart';
 
+import '../../../core%20/utils/app_strings.dart';
 import '../../model/recipe_category.dart';
 import '../../model/recipe_model.dart';
 import 'title_with_action_tile.dart';

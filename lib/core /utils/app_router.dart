@@ -1,8 +1,8 @@
 import 'package:go_router/go_router.dart';
-import 'package:retro_recipes/app/view/boarding_view.dart';
-import 'package:retro_recipes/app/view/recipe_details.dart';
 
+import '../../app/view/boarding_view.dart';
 import '../../app/view/home_view.dart';
+import '../../app/view/recipe_details.dart';
 import '../helpers/custom_transition.dart';
 
 abstract class AppRouter {

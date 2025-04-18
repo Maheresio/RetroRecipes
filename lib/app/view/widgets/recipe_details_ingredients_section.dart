@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:retro_recipes/core%20/utils/app_strings.dart';
 
+import '../../../core%20/utils/app_strings.dart';
 import '../../model/ingredients_model.dart';
 
 class RecipeDetailsIngredientsSection extends StatelessWidget {

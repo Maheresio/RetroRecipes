@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:retro_recipes/core%20/utils/app_router.dart';
+import '../../../core%20/utils/app_router.dart';
 
 import '../../model/recipe_model.dart';
 import 'popular_recipe_listview_item.dart';
